@@ -1,0 +1,11 @@
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.exe
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.deps.json
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.runtimeconfig.json
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.runtimeconfig.dev.json
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.dll
+B:\Personal\C#\FundamentosNetCore\Escuelita\bin\Debug\netcoreapp3.1\Escuelita.pdb
+B:\Personal\C#\FundamentosNetCore\Escuelita\obj\Debug\netcoreapp3.1\Escuelita.csprojAssemblyReference.cache
+B:\Personal\C#\FundamentosNetCore\Escuelita\obj\Debug\netcoreapp3.1\Escuelita.AssemblyInfoInputs.cache
+B:\Personal\C#\FundamentosNetCore\Escuelita\obj\Debug\netcoreapp3.1\Escuelita.AssemblyInfo.cs
+B:\Personal\C#\FundamentosNetCore\Escuelita\obj\Debug\netcoreapp3.1\Escuelita.dll
+B:\Personal\C#\FundamentosNetCore\Escuelita\obj\Debug\netcoreapp3.1\Escuelita.pdb
