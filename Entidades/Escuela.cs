@@ -48,6 +48,8 @@ namespace Escuelita.Entidades
             set{_tipo=value;}
         }
 
+        public Curso[] Cursos {get;set;}
+
         public Escuela(string Nombre, string Pais, string Ciudad, int Año, TipoEscuela Tipo=TipoEscuela.Primaria)
         {
             (_nombre, _pais, _ciudad, _añoCreacion, _tipo)=(Nombre, Pais, Ciudad, Año, Tipo);

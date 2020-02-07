@@ -11,15 +11,59 @@ namespace Escuelita
             Console.WriteLine(objEscuela);
 
 
-            Curso[] arregloCursos = new Curso[3];
-            arregloCursos[0] = new Curso() { Nombre = "101" };
-            arregloCursos[1] = new Curso() { Nombre = "201", Jornada = TipoJornada.Noche };
-            arregloCursos[2] = new Curso() { Nombre = "301" };
+            objEscuela.Cursos = new Curso[3]
+            {
+                 new Curso() { Nombre = "101" },
+                 new Curso() { Nombre = "201", Jornada = TipoJornada.Noche },
+                 new Curso() { Nombre = "301" }
+            };
 
-            Console.WriteLine($"Curso:{arregloCursos[0].Nombre} ID:{arregloCursos[0].ID} Jornada:{arregloCursos[0].Jornada}");
-            Console.WriteLine($"Curso:{arregloCursos[1].Nombre} ID:{arregloCursos[1].ID} Jornada:{arregloCursos[1].Jornada}");
-            Console.WriteLine($"Curso:{arregloCursos[2].Nombre} ID:{arregloCursos[2].ID} Jornada:{arregloCursos[2].Jornada}");
+            /* Console.WriteLine($"Curso:{objEscuela.Cursos[0].Nombre} ID:{objEscuela.Cursos[0].ID} Jornada:{objEscuela.Cursos[0].Jornada}");
+            Console.WriteLine($"Curso:{objEscuela.Cursos[1].Nombre} ID:{objEscuela.Cursos[1].ID} Jornada:{objEscuela.Cursos[1].Jornada}");
+            Console.WriteLine($"Curso:{objEscuela.Cursos[2].Nombre} ID:{objEscuela.Cursos[2].ID} Jornada:{objEscuela.Cursos[2].Jornada}"); */
+
+            ImprimeCursosForEach(objEscuela);
+
 
         }
+
+
+        private static void ImprimeCursosWhile(Escuela escuela)
+        {
+            int contador = 0;
+            while (contador < escuela.Cursos.Length)
+            {
+                Console.WriteLine($"Curso:{escuela.Cursos[contador].Nombre} ID:{escuela.Cursos[contador].ID} Jornada:{escuela.Cursos[contador].Jornada}");
+                contador++;
+            }
+
+        }
+
+        private static void ImprimeCursosDoWhile(Escuela escuela)
+        {
+            int contador = 0;
+            do
+            {
+                Console.WriteLine($"Curso:{escuela.Cursos[contador].Nombre} ID:{escuela.Cursos[contador].ID} Jornada:{escuela.Cursos[contador].Jornada}");
+            } while (++contador < escuela.Cursos.Length);
+        }
+
+
+        private static void ImprimeCursosFor(Escuela escuela)
+        {
+            for(int i=0; i<escuela.Cursos.Length; i++)
+            {
+                Console.WriteLine($"Curso:{escuela.Cursos[i].Nombre} ID:{escuela.Cursos[i].ID} Jornada:{escuela.Cursos[i].Jornada}");
+            }
+        }
+
+        private static void ImprimeCursosForEach(Escuela escuela)
+        {
+            foreach(Curso item in escuela.Cursos)
+            {
+                Console.WriteLine($"Curso:{item.Nombre} ID:{item.ID} Jornada:{item.Jornada}");
+            }
+        }
+
     }
 }
