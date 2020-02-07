@@ -1,5 +1,6 @@
 ﻿using System;
 using Escuelita.Entidades;
+using Escuelita.Util;
 
 namespace Escuelita
 {
@@ -8,7 +9,11 @@ namespace Escuelita
         static void Main(string[] args)
         {
             Escuela objEscuela = new Escuela("COBAEP", "México", "Puebla", 1983);
+            /* Printer.WriteLinea(objEscuela.ToString().Length);
             Console.WriteLine(objEscuela);
+            Printer.WriteLinea(objEscuela.ToString().Length); */
+            Printer.Titulo(objEscuela.ToString());
+
 
 
             objEscuela.Cursos = new Curso[3]
@@ -19,6 +24,7 @@ namespace Escuelita
             };
 
             //objEscuela.Cursos = null;
+            Printer.Titulo("Cursos de la Escuela");
             ImprimeCursosForEach(objEscuela);
 
         }
